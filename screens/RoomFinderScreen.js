@@ -172,7 +172,10 @@ export default function RoomFinderScreen({ navigation }) {
           <Text style={[styles.navText, styles.navTextActive]}>Rooms</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity 
+          style={styles.navItem}
+          onPress={() => navigation.navigate('ActivityLookup')}
+        >
           <Svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             <Rect x="3" y="3" width="7" height="7" rx="1" stroke="#9CA3AF" strokeWidth="2" fill="none"/>
             <Rect x="14" y="3" width="7" height="7" rx="1" stroke="#9CA3AF" strokeWidth="2" fill="none"/>
@@ -182,7 +185,10 @@ export default function RoomFinderScreen({ navigation }) {
           <Text style={styles.navText}>Activities</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity 
+          style={styles.navItem}
+          onPress={() => navigation.navigate('Profile')}
+        >
           <Svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             <Circle cx="12" cy="8" r="4" stroke="#9CA3AF" strokeWidth="2" fill="none"/>
             <Path d="M4 20C4 16.6863 6.68629 14 10 14H14C17.3137 14 20 16.6863 20 20" stroke="#9CA3AF" strokeWidth="2"/>
