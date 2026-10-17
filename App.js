@@ -97,14 +97,20 @@ export default function App() {
 
 const styles = StyleSheet.create({
   webContainer: {
-    flex: 1,
+    width: '100vw',
+    height: '100vh',
     backgroundColor: '#1a1a1a',
     justifyContent: 'center',
     alignItems: 'center',
+    overflow: 'hidden',
+    position: 'fixed',
+    top: 0,
+    left: 0,
   },
   phoneFrame: {
     width: 390,
     height: 844,
+    maxHeight: '95vh',
     backgroundColor: 'white',
     overflow: 'hidden',
     borderRadius: 40,

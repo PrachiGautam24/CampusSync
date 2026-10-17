@@ -89,9 +89,9 @@ export default function SplashScreen({ navigation }) {
 
           {/* Campus Building and Trees - Positioned at very bottom */}
           <View style={styles.campusContainer}>
-            {/* Left Trees - even more space from building */}
-            <View style={[styles.tree, { left: 30 }]} />
-            <View style={[styles.tree, { left: 60, height: 75 }]} />
+            {/* Left Trees - more space from building */}
+            <View style={[styles.tree, { left: 20 }]} />
+            <View style={[styles.tree, { left: 55, height: 75 }]} />
 
             {/* Campus Building */}
             <View style={styles.buildingWrapper}>
@@ -120,9 +120,9 @@ export default function SplashScreen({ navigation }) {
               </View>
             </View>
 
-            {/* Right Trees - even more space from building */}
-            <View style={[styles.tree, { right: 60, height: 75 }]} />
-            <View style={[styles.tree, { right: 30 }]} />
+            {/* Right Trees - more space from building */}
+            <View style={[styles.tree, { right: 55, height: 75 }]} />
+            <View style={[styles.tree, { right: 20 }]} />
           </View>
         </View>
       </LinearGradient>
@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
   },
   campusContainer: {
     position: 'absolute',
-    bottom: 25,
+    bottom: 0,
     left: 0,
     right: 0,
     flexDirection: 'row',
@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
   },
   tree: {
     position: 'absolute',
-    bottom: 5,
+    bottom: 0,
     width: 30,
     height: 70,
     backgroundColor: 'rgba(100, 120, 190, 0.6)',
